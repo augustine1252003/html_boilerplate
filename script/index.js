@@ -1,6 +1,7 @@
-const btn = document.getElementById('button');
+const myButton = document.getElementById('master');
 
-btn.addEventListener('click', function(){
-    document.getElementById('head').innerHTML = 'Random Dog';
-    document.getElementById('para').innerHTML = 'Random Dog did some random thing and made something random happen';
-})
+myButton.addEventListener('click', toggleStyle);
+
+function toggleStyle(){
+    myButton.classList.toggle('button');
+}
